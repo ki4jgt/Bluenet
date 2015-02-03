@@ -17,8 +17,6 @@
 #You should have received a copy of the GNU General Public License
 #along with Bluenet.  If not, see <http://www.gnu.org/licenses/>.
 
-#Testing github
-
 from platform import system
 from os import system as command
 import threading
