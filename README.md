@@ -15,12 +15,16 @@ The settings.conf file (which you may create) isn't required for your server to 
 
 VALUE					EXPECTATION							EXPLAINATION
 "port"					integer								This is the port your server will be running on. Failure
-															to provide a value here will result in a random port
-															being chosen.
+													to provide a value here will result in a random port
+													being chosen.
 
-"_id"					20 Character string					Your network ID is attached to every search or message
-															exchange performed on your behalf within the network.
-															This is NOT the ID which your messages are sent to. It is
-															a feature which makes message delivery within the network
-															easier. This option has no practical purpose. It just
-															serves as a bit of customization.
+"_id"					20 Character string						Your network ID is attached to every search or message
+													exchange performed on your behalf within the network.
+													This is NOT the ID which your messages are sent to. It is
+													a feature which makes message delivery within the network
+													easier. This option has no practical purpose. It just
+													serves as a bit of customization.
+
+"ping"					integer 1 or 0							This option allows your server to ping your local network
+													for other Bluenet users. If enabled, your server will send
+													out a broadcast message over your LAN on startup.
