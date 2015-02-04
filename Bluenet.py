@@ -80,7 +80,7 @@ class BluenetServer(socketserver.BaseRequestHandler):
 			if len(database.peers) < 10:
 				if self.peer != False and len(self.peer) != 1:
 					if "_id" in self.peer:
-						if self.peer["_id"] not in database.peers and len(self.peer["_id"] == 20 and isinstance(self.peer["_id"], str):
+						if self.peer["_id"] not in database.peers and len(self.peer["_id"]) == 20 and isinstance(self.peer["_id"], str):
 							database.peers.append({self.peer["_id"]:{"internet":{"ip":self.client_address, "port":self.data[8:]}}})
 							print("Database: " + self.peer["_id"] + " added.")
 							self.request.sendall(str("OK:" + netid).encode())
